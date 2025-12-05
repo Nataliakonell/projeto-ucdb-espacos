@@ -1,0 +1,28 @@
+.maps-section {
+    padding: 60px;;
+
+}
+
+
+.map-container, h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+iframe {
+    width: 40%;
+    border: none;
+    height: 400px;
+    display: block;
+}
+
+.address-text {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.6;
+}
