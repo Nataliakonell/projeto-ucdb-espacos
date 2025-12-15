@@ -14,6 +14,7 @@
   border-radius: 10px;
   cursor: pointer;
   padding-left: 1rem;
+  pointer-events: auto;
 }
 
 /* GRID da lateral */
@@ -79,4 +80,24 @@
   max-width: 90%;
   max-height: 90%;
   border-radius: 8px;
+}
+
+.close img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.nav-prev, .nav-next {
+  top: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.nav-prev:hover, .nav-next:hover {
+  opacity: 1;
+ -xpedu-transform: scale(1.3);
 }

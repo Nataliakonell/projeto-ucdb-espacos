@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-grid-gallery": "^1.0.1",
+    "react-router-dom": "^7.10.1",
     "yet-another-react-lightbox": "^3.25.0"
   },
   "devDependencies": {

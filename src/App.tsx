@@ -1,17 +1,11 @@
-import './App.css'
-import SpacePatioPage from './routes/SpacePatioPage';
-
-
-
-
+﻿import "./App.css"
+import SpacePatioPage from "./routes/SpacePatioPage";
 
 function App() {
   return (
-    <>
- <SpacePatioPage />
-
-    </>
-
+    <div className="app-container">
+      <SpacePatioPage />
+    </div>
   );
 }
 

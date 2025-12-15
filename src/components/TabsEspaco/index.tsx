@@ -1,39 +1,40 @@
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import "./styles.css";
-import MapUcdb from "../MapUcdb";
 
 export default function TabsEspaco() {
-  const [aba, setAba] = useState<"endereco" | "sobre" | "politica">("endereco");
+  const location = useLocation();
+
+  const isActive = (path: string) => {
+    if (path === "endereco") {
+      return location.pathname === "/" || location.pathname === "/endereco";
+    }
+    return location.pathname === `/${path}`;
+  };
 
   return (
     <>
       {/* ABAS */}
       <div className="tabs-container">
-        <button
-          className={`tab-btn ${aba === "endereco" ? "active" : ""}`}
-          onClick={() => setAba("endereco")}
+        <NavLink
+          to="/endereco"
+          className={`tab-btn ${isActive("endereco") ? "active" : ""}`}
         >
           Endereço
-        </button>
+        </NavLink>
 
-        <button
-          className={`tab-btn ${aba === "sobre" ? "active" : ""}`}
-          onClick={() => setAba("sobre")}
+        <NavLink
+          to="/sobre"
+          className={`tab-btn ${isActive("sobre") ? "active" : ""}`}
         >
           Sobre espaço
-        </button>
+        </NavLink>
 
-        <button
-          className={`tab-btn ${aba === "politica" ? "active" : ""}`}
-          onClick={() => setAba("politica")}
+        <NavLink
+          to="/politica"
+          className={`tab-btn ${isActive("politica") ? "active" : ""}`}
         >
           Política
-        </button>
-      </div>
-
-      {/* CONTEÚDO DAS ABAS */}
-      <div className="conteudo-tabs">
-        {aba === "endereco" && <MapUcdb />}
+        </NavLink>
       </div>
     </>
   );
