@@ -1,6 +1,7 @@
 import { NavLink, useLocation } from "react-router-dom";
 import "./styles.css";
 
+
 export default function TabsEspaco() {
   const location = useLocation();
 
@@ -13,7 +14,7 @@ export default function TabsEspaco() {
 
   return (
     <>
-      {/* ABAS */}
+
       <div className="tabs-container">
         <NavLink
           to="/endereco"
@@ -29,6 +30,7 @@ export default function TabsEspaco() {
           Sobre espaço
         </NavLink>
 
+       
         <NavLink
           to="/politica"
           className={`tab-btn ${isActive("politica") ? "active" : ""}`}
