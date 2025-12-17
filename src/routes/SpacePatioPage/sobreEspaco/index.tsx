@@ -17,3 +17,4 @@ Durante os eventos (até 7 horas), estão disponíveis responsável pelo salão,
         </>
     );
 }
+

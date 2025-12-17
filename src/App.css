@@ -25,3 +25,9 @@ body {
     --background-color: #f5f5f5;
     --line-color:#ddd;
 }
+
+.section-container {
+  max-width: 1100px;  
+  margin: 0 auto;     
+  padding: 2rem;
+}

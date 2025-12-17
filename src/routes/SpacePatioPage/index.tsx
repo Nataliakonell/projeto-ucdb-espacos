@@ -14,15 +14,45 @@ import banheiroIcon from "../../assets/banheiro.png";
 import cozinhaIcon from "../../assets/cozinha.png";
 import elevadorIcon from "../../assets/elevador.png";
 
+import { Outlet } from "react-router-dom";
+
 export default function SpacePatioPage() {
   const comodidades: Comodidade[] = [
-    { id: 1, label: "Ar condicionado", icon: arIcon },
-    { id: 2, label: "Wi-fi", icon: wifiIcon },
-    { id: 3, label: "Palco equipado", icon: palcoIcon },
-    { id: 4, label: "Camarim de 20m²", icon: camarimIcon },
-    { id: 5, label: "Banheiros", icon: banheiroIcon },
-    { id: 6, label: "Cozinhas completas", icon: cozinhaIcon },
-    { id: 8, label: "Elevador", icon: elevadorIcon },
+    {
+      id: 1,
+      label: "Ar condicionado",
+      icon: arIcon
+    },
+    {
+      id: 2,
+      label: "Wi-fi",
+      icon: wifiIcon
+    },
+    {
+      id: 3,
+      label: "Palco equipado",
+      icon: palcoIcon
+    },
+    {
+      id: 4,
+      label: "Camarim de 20m²",
+      icon: camarimIcon
+    },
+    {
+      id: 5,
+      label: "Banheiros",
+      icon: banheiroIcon
+    },
+    {
+      id: 6,
+      label: "Cozinhas completas",
+      icon: cozinhaIcon
+    },
+    {
+      id: 8,
+      label: "Elevador",
+      icon: elevadorIcon
+    },
   ];
 
   return (
@@ -32,8 +62,30 @@ export default function SpacePatioPage() {
       <TabsEspaco />
 
       <Comodidades comodidades={comodidades} />
+      
+      <div className="conteudo-tabs">
+        <Outlet />
+      </div>
 
       <Footer />
     </>
   );
 }
+
+/*function SpacePatioLayout() {
+  return (
+    <div className="app-container">
+      <Header />
+      <GalleryPatio />
+      <TabsEspaco />
+
+      <ComodidadesPatio />
+
+      <div className="conteudo-tabs">
+        <Outlet />
+      </div>
+
+      <Footer />
+    </div>
+  );
+}*/

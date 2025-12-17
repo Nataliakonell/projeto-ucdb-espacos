@@ -26,7 +26,7 @@ export default function TabsEspaco() {
         <NavLink
           to="/sobre"
           className={`tab-btn ${isActive("sobre") ? "active" : ""}`}
-        >
+        ><a href="/#SobreEspaco" className="default-btn"></a>
           Sobre espaço
         </NavLink>
 

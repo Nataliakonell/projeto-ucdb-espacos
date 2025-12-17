@@ -16,6 +16,8 @@
     cursor: pointer;
     color: #555;
     position: relative;
+    transition: color 0.3s;
+    text-decoration: none;
 }
 
 .tab-btn:hover {

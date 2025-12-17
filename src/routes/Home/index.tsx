@@ -3,12 +3,13 @@ import ucdbbanner from '../../assets/ucdb-banner.jpg'
 import Footer from '../../components/Footer'
 import Lupa from '../../assets/search.png'
 import ucdblogo from '../../assets/logo-ucdb.png'
+import "../../App.css"
 
 export default function Home() {
     return (
         <>      
         <nav className="banner">
-            <div className="ucdb-logo-banner">
+            <div className="logo-ucdb-left">
                 <img src={ucdblogo} alt="UCDB" />
             <div className="span">
             <span>Espaços</span>
