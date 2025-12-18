@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 import Lupa from '../../assets/search.png'
 import ucdblogo from '../../assets/logo-ucdb.png'
 import "../../App.css"
+import SpaceCardPatio from '../SpaceCardPatio'
 
 export default function Home() {
     return (
@@ -57,8 +58,10 @@ export default function Home() {
                             
                         </div>
                     </div>
-                </div></div>
+                </div>
+                </div>
             </div>
+            <SpaceCardPatio />
         <Footer />
         </>
 

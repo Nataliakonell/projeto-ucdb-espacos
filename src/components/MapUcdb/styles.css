@@ -6,7 +6,8 @@
 
 .map-container, h2{
     font-size: 28px;
-   
+
+    padding-left: 0;
 }
 
 iframe {

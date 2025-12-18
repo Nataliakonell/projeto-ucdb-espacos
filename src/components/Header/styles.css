@@ -12,14 +12,16 @@
     height: 3rem;
     margin-right: 2rem;
 }
-.span{
+
+.span {
     font-size: 1.5rem;
     font-family: 'Inter', sans-serif;
     vertical-align: super;
     padding-top: 1rem;
-padding-left: 1rem;
+    padding-left: 1rem;
 }
-.left{
+
+.left {
     display: flex;
     align-items: center;
 }

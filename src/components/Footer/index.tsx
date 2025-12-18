@@ -13,7 +13,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                <img src={facebookIcon} alt="Facebook" />
+                    <img src={facebookIcon} alt="Facebook" />
                 </a>
 
                 <a
@@ -24,8 +24,21 @@ export default function Footer() {
                     <img src={instagramIcon} alt="Instagram" />
                 </a>
 
-                <img src={youtubeIcon} alt="YouTube" />
-                <img src={linkedinIcon} alt="LinkedIn" />
+                <a
+                    href="https://www.youtube.com/user/ucdboficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={youtubeIcon} alt="YouTube" />
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/school/ucdboficial/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={linkedinIcon} alt="LinkedIn" />
+                </a>
             </div>
             <div className="footer-content">
                 <p>Av. Tamandaré, 6000 - Jardim Seminário - Campo Grande/MS - 79117-900</p>

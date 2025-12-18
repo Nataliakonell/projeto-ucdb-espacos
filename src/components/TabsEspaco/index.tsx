@@ -17,22 +17,22 @@ export default function TabsEspaco() {
 
       <div className="tabs-container">
         <NavLink
-          to="/endereco"
+          to="endereco"
           className={`tab-btn ${isActive("endereco") ? "active" : ""}`}
         >
           Endereço
         </NavLink>
 
         <NavLink
-          to="/sobre"
+          to="sobre"
           className={`tab-btn ${isActive("sobre") ? "active" : ""}`}
-        ><a href="/#SobreEspaco" className="default-btn"></a>
+  >
           Sobre espaço
         </NavLink>
 
        
         <NavLink
-          to="/politica"
+          to="politica"
           className={`tab-btn ${isActive("politica") ? "active" : ""}`}
         >
           Política
