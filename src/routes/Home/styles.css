@@ -174,3 +174,10 @@
     align-items: center;
     z-index: 3;
 }
+
+.espaco-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    padding-left: 2rem;
+
+}

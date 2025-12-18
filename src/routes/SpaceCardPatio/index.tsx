@@ -1,6 +1,8 @@
 import type { SpaceCard } from "../../components/SpaceCards";
 import SpaceCards from "../../components/SpaceCards";
 import spaceCardPhoto from "../../../public/imgs/patio2.jpg";
+import { Link } from "react-router-dom";
+import "../../components/SpaceCards/styles.css"
 
 export default function SpaceCardPatio() {
 
@@ -8,12 +10,17 @@ export default function SpaceCardPatio() {
         {
             id: 1,
             photo: spaceCardPhoto,
-            title: "Patio",
-            description: "Comodidades"
+            title: "Pátio",
+            description: "Anexar as comodidades do espaço aqui.",
         },
     ];
 
     return (
-        <SpaceCards spaceCards={spaceCards} />
+        <>
+            <Link to="/espaco" className="spacecard-link">
+            
+                <SpaceCards spaceCards={spaceCards} />
+            </Link>
+        </>
     );
 }

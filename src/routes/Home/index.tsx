@@ -61,6 +61,7 @@ export default function Home() {
                 </div>
                 </div>
             </div>
+            <h2 className="espaco-title">Espaços disponíveis</h2>
             <SpaceCardPatio />
         <Footer />
         </>

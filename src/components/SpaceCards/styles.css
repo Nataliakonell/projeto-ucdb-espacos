@@ -1,0 +1,57 @@
+.spacecards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 1rem;
+
+}
+
+/*** Cards ***/
+.spacecard-item {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.spacecard-item:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/*** Img ***/
+.spacecard-photo {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/*** descricoes ***/
+.spacecard-content {
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.spacecard-content h3 {
+    font-size: 1.1rem;
+    color: #1f2937;
+         
+}
+
+.spacecard-content p {
+    font-size: 0.95rem;
+    color: #6b7280;
+    line-height: 1.5;
+    max-width: 600px;
+    
+}
+
+.spacecard-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
